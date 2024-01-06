@@ -1,0 +1,9 @@
+# Create a Multinomial Naive Bayes model
+model = MultinomialNB()
+
+# Train the model on the training data
+model.fit(X_train_counts, y_train)
+
+# Test the model on the testing data
+accuracy = model.score(X_test_counts, y_test)
+print('Accuracy: ', accuracy)

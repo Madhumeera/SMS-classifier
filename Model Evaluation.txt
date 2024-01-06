@@ -1,0 +1,12 @@
+from sklearn.metrics import classification_report, confusion_matrix
+
+# Make predictions on the testing data
+y_pred = model.predict(X_test_counts)
+
+# Print the confusion matrix
+print('Confusion Matrix: ')
+print(confusion_matrix(y_test, y_pred))
+
+# Print the classification report
+print('Classification Report: ')
+print(classification_report(y_test, y_pred))
